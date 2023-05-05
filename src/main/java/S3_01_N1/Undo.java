@@ -9,13 +9,16 @@ public class Undo {
     private HashMap<Date, String> commandsDate = new HashMap<Date, String>();
 
 
-    //create an object of SingleObject
-    private static Undo instance = new Undo();
+    //Declaration an object of SingleObject
+    private static Undo instance;
     //make the constructor private so that this class cannot be
     //instantiated
     private Undo(){}
-    //Method that return the only Instance
+    //Method that return the only Instance "Constructor"
     public static Undo getInstance(){
+        if(instance == null){
+            instance = new Undo();
+        }
         return Undo.instance;
     }
 

@@ -2,7 +2,7 @@ package S3_01_N1;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main { //Singleton
     /*Crea una classe que repliqui el funcionament del comando 'S3_01_N1.Undo'. Aquesta classe serà utilitzada per la classe S3_01_N1.Main,
         que permetrà introduir opcions per consola.
 
@@ -14,6 +14,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Undo commandos = Undo.getInstance();
+
+        /*
+        Undo commandos2 = Undo.getInstance();
+        System.out.println(commandos.hashCode());
+        System.out.println(commandos2.hashCode());*/
 
         String message = "";
         boolean exit = false;
