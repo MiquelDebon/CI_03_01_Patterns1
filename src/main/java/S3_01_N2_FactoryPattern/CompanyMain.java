@@ -1,4 +1,4 @@
-package S3_01_N2;
+package S3_01_N2_FactoryPattern;
 
 import java.util.ArrayList;
 
@@ -13,6 +13,10 @@ public class CompanyMain {
         Agenda spain = agendaFactory.getAgenda("Spain");
         companyPhoneAgenda.add(spain.number("610267001"));
         companyDirectionAgenda.add(spain.direction("C/Gracia 127, Barcelona"));
+
+        Agenda sweden = agendaFactory.getAgenda("Sweden");
+        companyPhoneAgenda.add(sweden.number("610267002"));
+        companyDirectionAgenda.add(sweden.direction("Umea 241, gilteftr"));
 
 
         companyDirectionAgenda.forEach(System.out::println);

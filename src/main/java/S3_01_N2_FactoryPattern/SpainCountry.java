@@ -1,7 +1,6 @@
-package S3_01_N2;
+package S3_01_N2_FactoryPattern;
 
 public class SpainCountry implements Agenda {
-    private int pre = 34;
 
     @Override
     public String direction(String direction) {

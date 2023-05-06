@@ -1,4 +1,4 @@
-package S3_01_N2;
+package S3_01_N2_FactoryPattern;
 
 public interface Agenda {
     String number(String number);
