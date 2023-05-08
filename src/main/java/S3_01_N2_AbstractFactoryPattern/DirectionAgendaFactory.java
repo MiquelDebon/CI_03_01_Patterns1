@@ -2,11 +2,11 @@ package S3_01_N2_AbstractFactoryPattern;
 
 import S3_01_N2_AbstractFactoryPattern.Countries.SpainDirection;
 import S3_01_N2_AbstractFactoryPattern.Countries.SwedenDirection;
-import S3_01_N2_AbstractFactoryPattern.Intermediarios.AbstractFactory;
+import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_AbstractFactory;
 import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_Direction;
 import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_Number;
 
-public class DirectionAgendaFactory extends AbstractFactory {
+public class DirectionAgendaFactory implements Int_AbstractFactory {
 
     @Override
     public Int_Direction agendaDirection(String country) {

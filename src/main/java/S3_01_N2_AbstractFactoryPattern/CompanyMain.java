@@ -1,6 +1,6 @@
 package S3_01_N2_AbstractFactoryPattern;
 
-import S3_01_N2_AbstractFactoryPattern.Intermediarios.AbstractFactory;
+import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_AbstractFactory;
 import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_Direction;
 import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_Number;
 
@@ -14,8 +14,8 @@ public class CompanyMain {
         ArrayList<String> companyDirectionAgenda = new ArrayList<>();
 
         //Create Factories
-        AbstractFactory numberFactory = FactoryProducer.getFactory("number");
-        AbstractFactory directionFactory = FactoryProducer.getFactory("direction");
+        Int_AbstractFactory numberFactory = FactoryProducer.getFactory("number");
+        Int_AbstractFactory directionFactory = FactoryProducer.getFactory("direction");
 
         //Create Country Numbers
         Int_Number spainNumber = numberFactory.getNumber("Spain");
