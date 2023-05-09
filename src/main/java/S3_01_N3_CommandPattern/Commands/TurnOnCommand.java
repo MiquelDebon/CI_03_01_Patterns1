@@ -9,9 +9,8 @@ public class TurnOnCommand implements Commnad {
         this.vehicle = vehicle;
     }
 
-
     @Override
     public void execute() {
-        vehicle.accelerate();
+        vehicle.turnOn();
     }
 }

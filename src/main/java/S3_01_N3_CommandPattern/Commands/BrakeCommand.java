@@ -7,9 +7,9 @@ public class BrakeCommand implements Commnad{
     private Vehicle vehicle;
     public BrakeCommand(Vehicle vehicle){
         this.vehicle = vehicle;
-    };
+    }
     @Override
     public void execute() {
-        vehicle.accelerate();
+        vehicle.brake();
     }
 }

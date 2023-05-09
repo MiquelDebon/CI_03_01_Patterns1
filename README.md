@@ -6,3 +6,7 @@
 <li>Factory Pattern</li>
 <li>Abstract Factory Pattern</li>
 <li>Command Pattern</li>
+<br>
+<p>References:</p>
+<li>Multiple website and youtube Videos</li>
+<li>Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software </li>

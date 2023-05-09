@@ -13,13 +13,9 @@ public class InvokerDriver {
     }
 
     public void runOrders(){
-        for(Commnad command : commnadList){
-            command.execute();
-        }
+        commnadList.forEach(Commnad::execute);
         commnadList.clear();
         System.out.println();
     }
-
-
 
 }

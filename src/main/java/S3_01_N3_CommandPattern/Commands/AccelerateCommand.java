@@ -6,7 +6,7 @@ public class AccelerateCommand implements  Commnad{
     private Vehicle vehicle;
     public AccelerateCommand(Vehicle vehicle){
         this.vehicle = vehicle;
-    };
+    }
     @Override
     public void execute() {
         vehicle.accelerate();
