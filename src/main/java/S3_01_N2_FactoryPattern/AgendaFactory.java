@@ -1,7 +1,7 @@
 package S3_01_N2_FactoryPattern;
 
 public class AgendaFactory {
-    public Agenda getAgenda (String country){
+    public IAgenda getAgenda (String country){
         if(country.equalsIgnoreCase("Spain")){
             return new SpainCountry();
         }else if(country.equalsIgnoreCase("Sweden")){

@@ -1,6 +1,6 @@
 package S3_01_N2_FactoryPattern;
 
-public class SwedenCountry implements Agenda{
+public class SwedenCountry implements IAgenda {
     @Override
     public String direction(String direction) {
         return  "Direction: Sweden, " + direction;

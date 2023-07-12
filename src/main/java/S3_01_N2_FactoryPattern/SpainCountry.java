@@ -1,6 +1,6 @@
 package S3_01_N2_FactoryPattern;
 
-public class SpainCountry implements Agenda {
+public class SpainCountry implements IAgenda {
 
     @Override
     public String direction(String direction) {

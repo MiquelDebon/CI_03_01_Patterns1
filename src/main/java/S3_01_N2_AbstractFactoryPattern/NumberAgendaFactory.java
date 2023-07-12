@@ -2,14 +2,14 @@ package S3_01_N2_AbstractFactoryPattern;
 
 import S3_01_N2_AbstractFactoryPattern.Countries.SpainNumber;
 import S3_01_N2_AbstractFactoryPattern.Countries.SwedenNumber;
-import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_AbstractFactory;
-import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_Direction;
-import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_Number;
+import S3_01_N2_AbstractFactoryPattern.Intermediarios.IAbstractFactory;
+import S3_01_N2_AbstractFactoryPattern.Intermediarios.IDirection;
+import S3_01_N2_AbstractFactoryPattern.Intermediarios.INumber;
 
-public class NumberAgendaFactory implements Int_AbstractFactory {
+public class NumberAgendaFactory implements IAbstractFactory {
 
     @Override
-    public Int_Number getNumber(String country) {
+    public INumber getNumber(String country) {
         if(country.equalsIgnoreCase("Spain")){
             return new SpainNumber();
         }else if(country.equalsIgnoreCase("Sweden")){
@@ -19,7 +19,7 @@ public class NumberAgendaFactory implements Int_AbstractFactory {
     }
 
     @Override
-    public Int_Direction agendaDirection(String country) {
+    public IDirection agendaDirection(String country) {
         return null;
     }
 }

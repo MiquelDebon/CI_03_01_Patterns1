@@ -1,8 +1,8 @@
 package S3_01_N2_AbstractFactoryPattern;
 
-import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_AbstractFactory;
-import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_Direction;
-import S3_01_N2_AbstractFactoryPattern.Intermediarios.Int_Number;
+import S3_01_N2_AbstractFactoryPattern.Intermediarios.IAbstractFactory;
+import S3_01_N2_AbstractFactoryPattern.Intermediarios.IDirection;
+import S3_01_N2_AbstractFactoryPattern.Intermediarios.INumber;
 
 import java.util.ArrayList;
 
@@ -14,16 +14,16 @@ public class CompanyMain {
         ArrayList<String> companyDirectionAgenda = new ArrayList<>();
 
         //Create Factories
-        Int_AbstractFactory numberFactory = FactoryProducer.getFactory("number");
-        Int_AbstractFactory directionFactory = FactoryProducer.getFactory("direction");
+        IAbstractFactory numberFactory = FactoryProducer.getFactory("number");
+        IAbstractFactory directionFactory = FactoryProducer.getFactory("direction");
 
         //Create Country Numbers
-        Int_Number spainNumber = numberFactory.getNumber("Spain");
-        Int_Number swedenNumber = numberFactory.getNumber("Sweden");
+        INumber spainNumber = numberFactory.getNumber("Spain");
+        INumber swedenNumber = numberFactory.getNumber("Sweden");
 
         //Create Country Directions
-        Int_Direction spainDirection = directionFactory.agendaDirection("Spain");
-        Int_Direction swedenDirection = directionFactory.agendaDirection("Sweden");
+        IDirection spainDirection = directionFactory.agendaDirection("Spain");
+        IDirection swedenDirection = directionFactory.agendaDirection("Sweden");
 
 
         //Insert Data

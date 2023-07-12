@@ -2,7 +2,7 @@ package S3_01_N3_CommandPattern.Commands;
 
 import S3_01_N3_CommandPattern.VehiclesReceiver.Vehicle;
 
-public class TurnOnCommand implements Commnad {
+public class TurnOnCommand implements ICommnad {
     private Vehicle vehicle;
 
     public TurnOnCommand(Vehicle vehicle) {

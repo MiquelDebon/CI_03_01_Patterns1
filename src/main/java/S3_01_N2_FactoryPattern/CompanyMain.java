@@ -10,11 +10,11 @@ public class CompanyMain {
 
         AgendaFactory agendaFactory = new AgendaFactory();
 
-        Agenda spain = agendaFactory.getAgenda("Spain");
+        IAgenda spain = agendaFactory.getAgenda("Spain");
         companyPhoneAgenda.add(spain.number("610267001"));
         companyDirectionAgenda.add(spain.direction("C/Gracia 127, Barcelona"));
 
-        Agenda sweden = agendaFactory.getAgenda("Sweden");
+        IAgenda sweden = agendaFactory.getAgenda("Sweden");
         companyPhoneAgenda.add(sweden.number("610267002"));
         companyDirectionAgenda.add(sweden.direction("Umea 241, gilteftr"));
 
